@@ -3,6 +3,11 @@ import pygame
 
 # Initialize pygame so it runs in the background and manages things
 pygame.init()
+#make colors
+red = pygame.Color(255,0,0)
+orange = pygame.Color(200,120,0)
+purple = pygame.Color(150,0,150)
+
 
 # Create a display. Size must be a tuple, which is why it's in parentheses
 screen = pygame.display.set_mode( (400, 300) )
@@ -16,3 +21,6 @@ while True:
         if event.type == pygame.QUIT:
             # If so, exit the program
             sys.exit()
+    #fill the screen with color
+    screen.fill(purple)
+    pygame.display.flip()
